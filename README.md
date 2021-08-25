@@ -1,7 +1,7 @@
 # Dependent Dropdown Example
 
-[![Python Version](https://img.shields.io/badge/python-3.6-brightgreen.svg)](https://python.org)
-[![Django Version](https://img.shields.io/badge/django-2.0-brightgreen.svg)](https://djangoproject.com)
+[![Python Version](https://img.shields.io/badge/python-3.8-brightgreen.svg)](https://python.org)
+[![Django Version](https://img.shields.io/badge/django-3.2-brightgreen.svg)](https://djangoproject.com)
 
 Example code about how to implement dependent dropdown lists with Django.
 
@@ -11,29 +11,38 @@ Read the blog post [How to Implement Dependent/Chained Dropdown List with Django
 
 This project is deployed at [dependent-dropdown-example.herokuapp.com](http://dependent-dropdown-example.herokuapp.com/hr/add/).
 
-## Running the Project Locally
+## How to Start 🏠
 
-First, clone the repository to your local machine:
+Clone this project and open the folder.
 
 ```bash
-git clone https://github.com/sibtc/dependent-dropdown-example.git
+git clone https://github.com/ba1x/django-dependent-dropdown.git
+cd django-dependent-dropdown
+```
+
+Create and enter the [Python environment](#python-environment).
+
+```bash
+python3 -m venv env     # create the python environment
+. env/bin/activate      # enter to the environment
 ```
 
 Install the requirements:
-
-```bash
+```
 pip install -r requirements.txt
 ```
 
-Finally, run the development server:
+**Migrate** the database and **run** the webserver on **PORT 3001**.
 
 ```bash
-python manage.py runserver
+./manage.py migrate         # start the project 
+./manage.py runserver 3001  # run the webserver
 ```
-
-The project will be available at **127.0.0.1:8000**.
-
 
 ## License
 
 The source code is released under the [MIT License](https://github.com/sibtc/dependent-dropdown-example/blob/master/LICENSE).
+
+## Credits
+
+This work is forked from [here](https://github.com/sibtc/dependent-dropdown-example).
